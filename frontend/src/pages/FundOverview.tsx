@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../api/client";
-import TopBar from "../components/TopBar";
 import type { AlertItem, DeskSummary, Overview } from "../types";
 
 // ── helpers ────────────────────────────────────────────────────────────────
