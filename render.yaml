@@ -15,4 +15,4 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        sync: false
+        value: https://desk-support-backend.onrender.com
