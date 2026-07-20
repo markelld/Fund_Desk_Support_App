@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
+    allowedHosts: ["fund-desk-support-app.onrender.com"],
     proxy: {
       "/api": "http://localhost:8000",
       "/health": "http://localhost:8000",
