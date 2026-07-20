@@ -7,8 +7,9 @@ services:
     startCommand: python seed.py && uvicorn main:app --host 0.0.0.0 --port $PORT
     plan: free
 
-  - type: static
+  - type: web
     name: desk-support-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
